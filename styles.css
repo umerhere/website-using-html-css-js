@@ -380,6 +380,7 @@ button:hover {
     font-size: 16px;
     margin: 0;
     width: 100%;
+    min-width: 220px;
     position: relative; 
     transition: all 0.3s ease-in-out;
 
@@ -393,7 +394,7 @@ button:hover {
     position: relative;
     display: flex;
     align-items: center;
-    gap: 8px; /* Space between text and icon */
+    /* gap: 8px; */ /* Space between text and icon */
 }
 
 .extra-padding {
@@ -405,16 +406,17 @@ button:hover {
     content: "We’re experienced in our individual crafts and understand how each one of our roles impacts your plan holistically.";
     position: absolute;
     width: 250px;
-    bottom: 130%;
+    bottom: 30%;
+    z-index: 500;
     left: 50%;
     font-size: 13px;
     border-radius: 5px;
-    font-weight: 400;
+    /* font-weight: 400; */
     transform: translateX(-50%);
     background-color: #297C6B;
     color: #fff;
     padding: 6px 12px;
-    text-align: left;
+    text-align: center;
     white-space: normal;
     word-wrap: break-word;
     overflow-wrap: break-word;
@@ -427,7 +429,7 @@ button:hover {
 .tooltip-button::after {
     content: "";
     position: absolute;
-    bottom: 101%;
+    bottom: calc(100% - 2px);
     left: 50%;
     transform: translateX(-50%);
     border-width: 6px;
@@ -915,6 +917,10 @@ letter-spacing: 0%;
     right: 10px;
 }
 
+.number{
+    color: #5BC8AF;
+}
+
 
 /*  */
 
@@ -1010,3 +1016,29 @@ letter-spacing: 0%;
     from {opacity: .4}
     to {opacity: 1}
   }
+/* 
+
+  .button-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 50%;
+    margin: auto;
+}
+
+.button {
+    display: grid;
+    place-items: center;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    width: 100%;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #0056b3;
+} */
